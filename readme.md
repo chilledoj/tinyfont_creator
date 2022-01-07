@@ -1,3 +1,9 @@
+# ARRGGGGGHHHH!
+
+Whoops. It doesn't work! I misunderstood how the data in the bitmaps is structured!! **Do not use**.
+
+**TODO**: FIX - Change mapping to horizontal instead of vertical rendering.
+
 # TinyFont Creator
 
 Creates a `.go` file with bitmap font images to be used by [TinyFont](https://github.com/tinygo-org/tinyfont) from a truetype font file.
