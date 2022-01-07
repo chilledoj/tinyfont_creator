@@ -1,0 +1,16 @@
+// Auto created wth TinyFont Creator
+// For use with TinyFont
+{{if .Credit}}// {{.Credit}} {{end}}
+
+package {{.PackageName}}
+
+import "tinygo.org/x/tinyfont"
+
+var {{title .FontName}} = tinyfont.Font{
+  Glyphs: []tinyfont.Glyph{
+    {{range .Glyphs}}
+    /* {{str .Rune}} */ {Rune: {{.Rune}}, Width: {{.Width}}, Height: {{.Height}}, XAdvance: {{.XAdvance}}, XOffset: {{.XOffset}}, YOffset: {{.YOffset}}, Bitmaps: []uint8{ {{bstr .Bitmaps}} } },
+    {{end}}
+  },
+  YAdvance: {{.YAdvance}},
+}
